@@ -8,6 +8,7 @@ class klasa2
 public:
 
     int a = 6, b = 5;
+
     klasa2(void);
     klasa2(int, int);
     klasa2(const klasa1& k);

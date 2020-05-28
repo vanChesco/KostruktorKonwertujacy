@@ -1,7 +1,8 @@
 ﻿#include <iostream>
 #include "complex.h"
 
-//todo WAŻNA RZECZ!!! W takiej sytuacji, gdzie nastepuje forward declaration, koniecznie trzeba przygotowac klase zlozona z pliku naglowkowego i zrodlowego (.h i .cpp)
+//todo WAŻNA RZECZ!!! W takiej sytuacji, gdzie nastepuje forward declaration, 
+//todo koniecznie trzeba przygotowac klase zlozona z pliku naglowkowego i zrodlowego (.h i .cpp)
 
 int main()
 {

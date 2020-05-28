@@ -1,30 +1,12 @@
 ﻿#include <iostream>
+#include "complex.h"
 
-class klasa1;
-
-class klasa2
-{
-public:
-
-    int a = 6, b = 5;
-    klasa2(void) : a(0), b(0) {};
-    klasa2(const klasa1& k) : a(k.r), b(k.e) { std::cout << "cpnv"; };
-};
-
-class klasa1
-{
-public:
-    int r = 23, e = 54;
-
-    klasa1(void) : r(0), e(0) {};
-
-    friend klasa2::klasa2(const klasa1& k);
-};
+//todo WAŻNA RZECZ!!! W takiej sytuacji, gdzie nastepuje forward declaration, koniecznie trzeba przygotowac klase zlozona z pliku naglowkowego i zrodlowego (.h i .cpp)
 
 int main()
 {
-    klasa2 d;
-    klasa1 l;
+    klasa2 d(1, 2);
+    klasa1 l(5, 6);
 
     d = l;
 
